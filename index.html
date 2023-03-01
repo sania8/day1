@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tip Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body class="body">
+        <div class="container">
+            <div class="calculator-container">
+                <div class="heading">
+                    <h1>Tip Calculator</h1>
+                </div>
+            </div>
+            <form action>
+            <div class="bill-amount">
+                <p>Enter the amount of your bill:</p>
+                <label for="bill">Rs. </label>
+                <input id="bill" type="text" placeholder="enter amount">
+            </div>
+            <div class="service">
+                <p>How was our service ?</p>
+                <div class="align">
+                <label for="service"> Rate:</label>
+                <div class="stars">
+                    <span id ="star" class="fa fa-star checked"></span>
+                    <span id ="star" class="fa fa-star checked"></span>
+                    <span id ="star" class="fa fa-star checked"></span>
+                    <span id ="star" class="fa fa-star"></span>
+                    <span id ="star" class="fa fa-star"></span>
+                </div>
+            </div>
+            </div>
+            </form>
+            <div class="people">
+                <p>Number of people sharing the bill</p>
+                <label for="people"></label>
+                <input type="text" placeholder="Number of people" name id="numOfPeople">
+            </div>
+            <div id="tip-container">
+                <p>Each person should pay:</p>
+                <h2 id="tip"></h2>
+            </div>
+            <br>
+            <br>
+           
+            <button id="cal" type="button"> Calculate </button>
+            
+          </div>
+        </div>
+    </body>
+    <script src="main.js"></script>
+</html>
